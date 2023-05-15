@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- 文字エンコーディングをUTF-8に設定 -->
     <meta charset="UTF-8" />
+
+    <!-- IEで最新のレンダリングエンジンを使用するよう指示 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ビューポートの幅をデバイスの幅に設定し、初期のズームレベルを1に設定 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ページのタイトルを設定 -->
     <title>Creating a scene</title>
 
+    <!-- ファビコンのリンクを設定 -->
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
 
+    <!-- CSSファイルへのリンクを設定 -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- es-module-shimsライブラリを非同期で読み込み -->
     <script async src="https://unpkg.com/es-module-shims@1.7.0/dist/es-module-shims.js" defer></script>
 
+    <!-- Import Mapを定義。three.jsとそのアドオンをCDNからインポート -->
     <script type="importmap">
       {
         "imports": {
@@ -21,7 +32,10 @@
       }
     </script>
 
+    <!-- 外部のJavaScriptファイル(main.js)へのリンクを設定 -->
     <script type="module" src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- ページのコンテンツはmain.jsで動的に生成されます -->
+  </body>
 </html>
